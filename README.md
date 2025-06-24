@@ -81,6 +81,104 @@ Automates workflows such as testing, deployment, and linting whenever changes ar
 These technologies work together to deliver a robust, scalable, and maintainable AirBnB clone platform.
 
 
+## Database Design
+
+The database structure for the AirBnB Clone project is designed to support user activity, property listings, bookings, reviews, and payments. Below are the key entities and their relationships:
+
+### 🧍 Users
+Represents users of the platform, including both hosts and guests.
+
+**Key Fields:**
+- `id`: Unique identifier (Primary Key)
+- `username`: User's display name
+- `email`: Unique email address
+- `password_hash`: Hashed password for security
+- `is_host`: Boolean flag to distinguish hosts from guests
+
+**Relationships:**
+- A user can list multiple properties.
+- A user can make multiple bookings.
+- A user can leave multiple reviews.
+
+---
+
+### 🏠 Properties
+Represents accommodations listed by hosts.
+
+**Key Fields:**
+- `id`: Unique property ID
+- `owner_id`: Foreign key to Users table
+- `title`: Name or title of the property
+- `description`: Detailed description
+- `location`: Address or coordinates
+- `price_per_night`: Cost for one night
+
+**Relationships:**
+- Each property is owned by one user (host).
+- A property can have multiple bookings.
+- A property can receive multiple reviews.
+
+---
+
+### 📅 Bookings
+Tracks reservations made by guests.
+
+**Key Fields:**
+- `id`: Unique booking ID
+- `user_id`: Foreign key to Users table (the guest)
+- `property_id`: Foreign key to Properties table
+- `start_date`: Check-in date
+- `end_date`: Check-out date
+- `total_price`: Final calculated price
+
+**Relationships:**
+- A booking is made by one user for one property.
+
+---
+
+### ⭐ Reviews
+Contains feedback from users about properties.
+
+**Key Fields:**
+- `id`: Unique review ID
+- `user_id`: Foreign key to Users table
+- `property_id`: Foreign key to Properties table
+- `rating`: Integer score (e.g., 1–5)
+- `comment`: Text review
+
+**Relationships:**
+- A user can write a review for a property.
+- A property can have many reviews.
+
+---
+
+### 💳 Payments
+Tracks payment transactions for bookings.
+
+**Key Fields:**
+- `id`: Unique payment ID
+- `booking_id`: Foreign key to Bookings table
+- `amount`: Payment amount
+- `payment_method`: e.g., credit card, PayPal
+- `status`: Paid, pending, failed
+- `timestamp`: Time of payment
+
+**Relationships:**
+- Each payment is linked to one booking.
+
+---
+
+### 🔗 Entity Relationships Summary
+
+- **User ↔ Property**: One-to-many (One user can own many properties).
+- **User ↔ Booking**: One-to-many (One user can make many bookings).
+- **Property ↔ Booking**: One-to-many (One property can be booked many times).
+- **Property ↔ Review**: One-to-many (One property can have many reviews).
+- **User ↔ Review**: One-to-many (One user can write many reviews).
+- **Booking ↔ Payment**: One-to-one (Each booking has one payment record).
+
+This relational database structure ensures data consistency and supports the core functionality of the AirBnB Clone platform.
+
 ## Author
 Mwangale Isaac Maliro – [isaacmario1](https://github.com/isaacmario1)
 
