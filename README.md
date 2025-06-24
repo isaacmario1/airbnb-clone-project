@@ -214,6 +214,55 @@ An optional admin dashboard to monitor users, listings, and bookings. Useful for
 
 Each of these features helps recreate a functional, full-stack rental platform and provides learning opportunities across backend, frontend, and database systems.
 
+## API Security
+
+Securing the backend APIs is critical to protect sensitive user data, prevent abuse, and ensure the integrity of the application. The following key security measures will be implemented:
+
+### 🔑 Authentication
+All users must log in with valid credentials to access protected routes. We will implement secure authentication using JSON Web Tokens (JWT), ensuring that each user session is verified and encrypted.
+
+**Why it's important:** Prevents unauthorized access to user accounts, properties, and personal information.
+
+---
+
+### 🛂 Authorization
+Role-based access control will be enforced to ensure users only perform actions permitted for their role (e.g., only hosts can list properties, only admins can view platform-wide data).
+
+**Why it's important:** Restricts critical operations to authorized users and reduces the risk of privilege escalation.
+
+---
+
+### ⏱ Rate Limiting
+We will apply rate limiting to sensitive endpoints (such as login and booking APIs) to protect against brute-force attacks and abuse.
+
+**Why it's important:** Prevents denial-of-service (DoS) attacks and protects system stability.
+
+---
+
+### 🔐 Data Encryption
+All data in transit will be encrypted using HTTPS (SSL/TLS). Sensitive data like passwords will be hashed using strong algorithms (e.g., bcrypt) before being stored.
+
+**Why it's important:** Protects user credentials and payment data from being intercepted or leaked.
+
+---
+
+### 📜 Input Validation & Sanitization
+APIs will validate and sanitize user input to prevent injection attacks, such as SQL Injection and Cross-Site Scripting (XSS).
+
+**Why it's important:** Ensures system reliability and prevents attackers from executing malicious commands.
+
+---
+
+### 🔍 Logging & Monitoring
+API activity will be logged to monitor suspicious behavior. Error responses will be kept generic to avoid exposing internal logic.
+
+**Why it's important:** Helps in detecting attacks early and reduces exposure of backend implementation details.
+
+---
+
+These security measures will work together to ensure the application is robust, user trust is maintained, and platform operations remain safe from threats.
+
+
 ## Author
 Mwangale Isaac Maliro – [isaacmario1](https://github.com/isaacmario1)
 
