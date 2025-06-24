@@ -179,6 +179,41 @@ Tracks payment transactions for bookings.
 
 This relational database structure ensures data consistency and supports the core functionality of the AirBnB Clone platform.
 
+## Feature Breakdown
+
+The AirBnB Clone project includes several core features that replicate the functionality of the original AirBnB platform. Each feature plays a vital role in delivering a complete and user-friendly experience.
+
+### 👥 User Management
+Allows users to register, log in, and manage their profiles securely. Includes role-based access for guests and hosts, ensuring that each user has access to relevant tools and data.
+
+### 🏠 Property Management
+Hosts can list their properties with detailed information, photos, pricing, and availability. This feature enables hosts to manage listings and attract bookings from potential guests.
+
+### 📅 Booking System
+Enables guests to search for available properties, choose booking dates, and reserve accommodations. It ensures that overlapping bookings are avoided and confirmations are sent upon successful booking.
+
+### 💳 Payment Integration
+Supports secure payment processing for reservations using common methods like credit/debit cards or third-party gateways. Payments are linked to bookings and tracked for both users and hosts.
+
+### ⭐ Reviews and Ratings
+After completing a stay, guests can leave reviews and ratings for properties. This helps future guests make informed decisions and encourages hosts to maintain high standards.
+
+### 🔍 Search and Filter
+Provides a robust search feature that allows users to filter listings based on location, price, amenities, and availability. Improves user experience by making it easy to find the right property quickly.
+
+### 🖼️ Property Image Gallery
+Each property listing includes a photo gallery to showcase accommodations. High-quality visuals improve credibility and attract more bookings.
+
+### 🔐 Authentication & Authorization
+Uses secure authentication mechanisms (e.g., hashed passwords, JWT tokens) to protect user data. Ensures that only authorized users can access sensitive features like property management and payments.
+
+### 🛠 Admin Panel (Optional)
+An optional admin dashboard to monitor users, listings, and bookings. Useful for platform administrators to manage and moderate activity.
+
+---
+
+Each of these features helps recreate a functional, full-stack rental platform and provides learning opportunities across backend, frontend, and database systems.
+
 ## Author
 Mwangale Isaac Maliro – [isaacmario1](https://github.com/isaacmario1)
 
