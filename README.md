@@ -48,6 +48,39 @@ Ensures the application is secure from threats. Implements authentication, autho
 These roles may overlap or be shared depending on the team size. For solo or small-team projects, individuals may take on multiple responsibilities.
 
 
+## Technology Stack
+
+This project leverages a modern full-stack development toolkit to replicate the functionality of the AirBnB platform. Below is a list of the core technologies used and their purposes:
+
+### 🔧 Django
+A high-level Python web framework used for rapid development of secure and scalable web applications. Django handles the backend logic, routing, RESTful API creation, user authentication, and admin interface.
+
+### 🐘 PostgreSQL
+An advanced, open-source relational database system used to store structured data such as user accounts, property listings, and booking information. It integrates well with Django and supports complex queries and transactions.
+
+### 🌐 HTML, CSS, JavaScript
+Used to build the static structure (HTML), styling (CSS), and interactive behavior (JavaScript) of the frontend interface.
+
+### ⚛️ React (Optional for Frontend)
+A JavaScript library for building user interfaces. React helps create dynamic, reusable components and offers a better user experience through single-page application (SPA) architecture.
+
+### 🚀 GraphQL (Optional)
+A query language for APIs that allows clients to request only the data they need. Can be used as an alternative to REST for more efficient data fetching between frontend and backend.
+
+### 🐳 Docker (Optional)
+Used to containerize the application and ensure consistent development, testing, and deployment environments across all machines.
+
+### 🔄 Git & GitHub
+Version control system (Git) and code hosting platform (GitHub) are used for collaborative development, issue tracking, and maintaining the project history.
+
+### ✅ GitHub Actions (CI/CD)
+Automates workflows such as testing, deployment, and linting whenever changes are pushed to the repository.
+
+---
+
+These technologies work together to deliver a robust, scalable, and maintainable AirBnB clone platform.
+
+
 ## Author
 Mwangale Isaac Maliro – [isaacmario1](https://github.com/isaacmario1)
 
