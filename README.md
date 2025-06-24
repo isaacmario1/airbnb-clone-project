@@ -262,6 +262,21 @@ API activity will be logged to monitor suspicious behavior. Error responses will
 
 These security measures will work together to ensure the application is robust, user trust is maintained, and platform operations remain safe from threats.
 
+## CI/CD Pipeline
+
+**CI/CD** stands for **Continuous Integration and Continuous Deployment/Delivery**. It is a software development practice that automates the process of building, testing, and deploying code whenever changes are made to the codebase.
+
+### Why It’s Important:
+CI/CD pipelines help catch bugs early, ensure code consistency, and speed up development by automatically running tests, linting code, and deploying updates to staging or production environments. This leads to faster feedback, improved code quality, and more reliable releases.
+
+### Tools We Plan to Use:
+- **GitHub Actions**: Automates tasks like running tests, checking code quality, and deploying updates when code is pushed to the repository.
+- **Docker**: Ensures the application runs in consistent environments by containerizing it for development, testing, and production.
+- **Render or Heroku** (Optional): Can be used for automatic deployment once CI pipelines pass successfully.
+- **Pytest or Unittest**: Used for backend testing to verify the functionality of APIs and logic.
+
+By integrating CI/CD into the AirBnB Clone project, we aim to create a stable and efficient development workflow that supports continuous improvement and delivery.
+
 
 ## Author
 Mwangale Isaac Maliro – [isaacmario1](https://github.com/isaacmario1)
