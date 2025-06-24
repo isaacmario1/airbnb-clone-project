@@ -18,6 +18,36 @@ The goal is to gain practical experience in full-stack web development using mod
 - **Version Control:** Git & GitHub
 - **Deployment:** Render / Heroku / Docker (optional)
 
+## Team Roles
+
+Below are the key roles involved in the AirBnB Clone project and their responsibilities:
+
+### 👨‍💻 Backend Developer
+Responsible for developing and maintaining the server-side logic of the application. This includes building APIs, implementing business logic, managing integrations, and ensuring data flows securely between the server and client.
+
+### 🎨 Frontend Developer
+Handles the user interface and user experience. Works on building dynamic, responsive web pages using HTML, CSS, JavaScript, and frameworks like React (optional). Ensures seamless interaction between the user and the backend systems.
+
+### 🧠 Database Administrator (DBA)
+Designs and manages the database schema and queries. Responsible for ensuring data integrity, performance optimization, backup strategies, and security of user data.
+
+### 🧪 Quality Assurance (QA) Tester
+Ensures the application meets quality standards through testing. Performs manual and automated tests to find bugs, verify functionality, and validate performance before deployment.
+
+### 🛠 DevOps Engineer
+Handles deployment, CI/CD pipelines, and server management. Ensures smooth integration, scaling, and availability of the application. May use tools like Docker, GitHub Actions, or Render for deployment.
+
+### 📋 Project Manager
+Oversees project planning, coordination, and communication among team members. Sets milestones, tracks progress, and ensures the team meets deadlines and delivers the required functionality.
+
+### 🛡️ Security Specialist *(Optional but important)*
+Ensures the application is secure from threats. Implements authentication, authorization, encryption, and secure coding practices to protect user data and privacy.
+
+---
+
+These roles may overlap or be shared depending on the team size. For solo or small-team projects, individuals may take on multiple responsibilities.
+
+
 ## Author
 Mwangale Isaac Maliro – [isaacmario1](https://github.com/isaacmario1)
 
